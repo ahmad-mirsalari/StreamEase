@@ -1,0 +1,8 @@
+onnx
+onnxruntime
+onnxoptimizer
+numpy
+torch
+tensorflow
+matplotlib
+tf2onnx
