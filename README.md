@@ -16,7 +16,7 @@ This library is based on the research outlined in the following paper:
 #### Clone the Repository:
 ~~~~~shell
 git clone git@github.com:ahmad-mirsalari/TCN_Pre_release.git
-cd TCN_Pre_release
+cd StreamEase
 ~~~~~
 
 #### Install Dependencies:
