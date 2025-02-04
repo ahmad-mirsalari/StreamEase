@@ -6,11 +6,22 @@ resources.
 ## Reference
 This library is based on the research outlined in the following paper:
 
-<!-- - S. A. Mirsalari, L. Bijar, M. Fariselli, M. Croome, F. Paci, G. Tagliavini, L. Benini , "StreamEase: Enabling Real-Time Inference of Temporal Convolution Networks on Low-Power MCUs with Stream-Oriented Automatic Transformation", 2024 31th IEEE International Conference on Electronics, Circuits and Systems (ICECS), [Link to the paper](https://ieeexplore.ieee.org/abstract/document/10136916) -->
+ - S. A. Mirsalari, L. Bijar, M. Fariselli, M. Croome, F. Paci, G. Tagliavini, L. Benini, "StreamEase: Enabling Real-Time Inference of Temporal Convolution Networks on Low-Power MCUs with Stream-Oriented Automatic Transformation", 2024 31st IEEE International Conference on Electronics, Circuits, and Systems (ICECS), Nancy, France, 2024, pp. 1-4, [Link to the paper](https://ieeexplore.ieee.org/abstract/document/10136916) 
 
-<!-- If you find this library useful in your research, please consider citing the paper: -->
+ If you find this library useful in your research, please consider citing the paper:
 
-
+ > ```
+> @INPROCEEDINGS{10848742,
+> author={Mirsalari, Seyed Ahmad and Bijar, Léo and Fariselli, Marco and Croome, Martin and Paci, Francesco and Tagliavini, Giuseppe and Benini, Luca},
+>  booktitle={2024 31st IEEE International Conference on Electronics, Circuits and Systems (ICECS)}, 
+>  title={StreamEase: Enabling Real-Time Inference of Temporal Convolution Networks on Low-Power MCUs with Stream-Oriented Automatic Transformation}, 
+>  year={2024},
+>  volume={},
+>  number={},
+>  pages={1-4},
+>  keywords={Accuracy;Computational modeling;Time series analysis;Memory management;Green products;Real-time systems;Libraries;Hardware;Integrated circuit modeling;Faces;streaming TCN;parallel ultra-low-power plat-form;real-time inference},
+>  doi={10.1109/ICECS61496.2024.10848742}}
+> ```
 
 ## Setup
 #### Clone the Repository:
