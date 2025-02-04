@@ -6,7 +6,7 @@ resources.
 ## Reference
 This library is based on the research outlined in the following paper:
 
- - S. A. Mirsalari, L. Bijar, M. Fariselli, M. Croome, F. Paci, G. Tagliavini, L. Benini, "StreamEase: Enabling Real-Time Inference of Temporal Convolution Networks on Low-Power MCUs with Stream-Oriented Automatic Transformation", 2024 31st IEEE International Conference on Electronics, Circuits, and Systems (ICECS), Nancy, France, 2024, pp. 1-4, [Link to the paper](https://ieeexplore.ieee.org/abstract/document/10136916) 
+ - S. A. Mirsalari, L. Bijar, M. Fariselli, M. Croome, F. Paci, G. Tagliavini, L. Benini, "StreamEase: Enabling Real-Time Inference of Temporal Convolution Networks on Low-Power MCUs with Stream-Oriented Automatic Transformation", 2024 31st IEEE International Conference on Electronics, Circuits, and Systems (ICECS), Nancy, France, 2024, pp. 1-4, [Link to the paper](https://ieeexplore.ieee.org/abstract/document/10848742) 
 
  If you find this library useful in your research, please consider citing the paper:
 
