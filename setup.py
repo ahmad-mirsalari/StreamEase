@@ -15,7 +15,7 @@ setup(
     description="A brief description of your package",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url="https://github.com/ahmad-mirsalari/TCN_Pre_release",  # Replace with your project's URL
+    url="https://github.com/ahmad-mirsalari/StreamEase",  # Replace with your project's URL
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
