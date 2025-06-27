@@ -33,7 +33,7 @@ def extract_outputs_list(
     prediction: List[np.ndarray],
     bmodel: dict,
     buffer_index: Optional[Dict[str, Dict[str, Union[str, int]]]] = None,
-    use_onnx_names: bool = True,
+    use_onnx_names: bool = False,
 ) -> List[Optional[np.ndarray]]:
     """
     Extracts and organizes the model's prediction outputs into a list, including buffer outputs

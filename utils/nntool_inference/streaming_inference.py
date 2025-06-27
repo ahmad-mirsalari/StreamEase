@@ -25,6 +25,7 @@ class Inference:
         decoder_path: Optional[str] = None,
         int8_q: bool = False,
         quantization: bool = False,
+        use_onnx_names: bool = False,
     ) -> None:
         """
         Initializes the inference class for a streaming model.
@@ -42,6 +43,7 @@ class Inference:
             decoder_path (str, optional): Path to the decoder model file. Defaults to None.
             int8_q (bool): Use int8 quantization if available.
             quantization (bool): Whether quantization is enabled.
+            use_onnx_names (bool): Whether to use ONNX names in the model.
         """
         self.current_buffers = {}
         self.kernel_sizes = {}
@@ -56,6 +58,7 @@ class Inference:
         self.full_network = full_network
         self.int8_q = int8_q
         self.quantization = quantization
+        self.use_onnx_names = use_onnx_names
         if not full_network:
             if enc_dec_model:
                 self.ort_sess_enc = encoder_path
@@ -251,7 +254,7 @@ class Inference:
                 )
 
                 outputs = extract_outputs_list(
-                    prediction, self.streaming_model, self.buffer_index
+                    prediction, self.streaming_model, self.buffer_index, self.use_onnx_names
                 )
 
                 if o_transpose:
@@ -401,19 +404,10 @@ class Inference:
                     correct_input_data, output_dict=False
                 )
 
-            # print(f"reset{reset}")
-            # for idx, x_input in enumerate(correct_input_data):
-            #     print(f"input {idx} is {x_input}")
-
-            # for idx, y_output in enumerate(prediction):
-            #     print(f"output {idx} is {y_output}")
             # Extract outputs and reshape if necessary
             outputs = extract_outputs_list(
-                prediction, self.streaming_model, self.buffer_index
+                prediction, self.streaming_model, self.buffer_index, self.use_onnx_names
             )
-
-            # for idx, out in enumerate(outputs):
-            #     print(f"extracted output {idx} is {out}")
 
             if transpose:
                 for i in range(num_speaker, len(outputs)):

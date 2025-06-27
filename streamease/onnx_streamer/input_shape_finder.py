@@ -513,8 +513,9 @@ def change_output_dims(
         elif len(output_shape) == 2:
             output_node.type.tensor_type.shape.dim[0].dim_param = "dim0"
             output_node.type.tensor_type.shape.dim[1].dim_param = "dim1"
-        else:
+        elif len(output_shape) == 3:
             output_node.type.tensor_type.shape.dim[0].dim_param = "dim0"
             output_node.type.tensor_type.shape.dim[1].dim_param = "dim1"
             output_node.type.tensor_type.shape.dim[2].dim_param = "dim2"
+
     return orig_output_shape, graph

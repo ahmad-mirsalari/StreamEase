@@ -325,6 +325,7 @@ class Inference:
                     if not self.full_network
                     else input_sequence
                 )
+                
                 correct_input_data = prepare_input_dictionary(
                     r_buffers, test_sequence, input_name
                 )
@@ -384,9 +385,14 @@ class Inference:
                         stride,
                         bias,
                     )
-                    # str_output[1] = update_output(
-                    # str_output[1], output_reshaped_1, out_index, length_mts, stride, bias
-                    # )
+                    str_output[1] = update_output(
+                        str_output[1],
+                        output_reshaped_1,
+                        out_index,
+                        length_mts,
+                        stride,
+                        bias,
+                    )
             row_counter += self.time_steps
 
         return str_output

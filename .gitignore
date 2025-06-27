@@ -1,0 +1,12 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore pickle files everywhere
+**/*.pickles
+**/*.pickle
+**/*.pkl
+
+# Ignore virtual environments
+venv/
+env/
