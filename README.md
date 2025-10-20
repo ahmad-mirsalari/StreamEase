@@ -3,12 +3,13 @@
 A python library that automates the conversion of Temporal Convolutional Network (TCN) models to a streaming format without affecting model accuracy, significantly reducing deployment time and computational
 resources.
 
-## Reference
-This library is based on the research outlined in the following paper:
+## References
+This library is based on the research outlined in the following papers:
 
- - S. A. Mirsalari, L. Bijar, M. Fariselli, M. Croome, F. Paci, G. Tagliavini, L. Benini, "StreamEase: Enabling Real-Time Inference of Temporal Convolution Networks on Low-Power MCUs with Stream-Oriented Automatic Transformation", 2024 31st IEEE International Conference on Electronics, Circuits, and Systems (ICECS), Nancy, France, 2024, pp. 1-4, [Link to the paper](https://ieeexplore.ieee.org/abstract/document/10848742) 
-
- If you find this library useful in your research, please consider citing the paper:
+ - S. A. Mirsalari, L. Bijar, M. Fariselli, M. Croome, F. Paci, G. Tagliavini, L. Benini, "StreamEase: Enabling Real-Time Inference of Temporal Convolution Networks on Low-Power MCUs with Stream-Oriented Automatic Transformation", 2024 31st IEEE International Conference on Electronics, Circuits, and Systems (ICECS), Nancy, France, 2024, pp. 1-4, [Link to the paper](https://ieeexplore.ieee.org/abstract/document/10848742)
+- S. A. Mirsalari, M. Fariselli, L. Bijar, F. Paci, L. Benini and G. Tagliavini, "Enabling Real-Time Streaming Temporal Convolution Network Inference on Ultra-Low-Power Microcontrollers," 2025 IEEE Computer Society Annual Symposium on VLSI (ISVLSI), Kalamata, Greece, 2025, pp. 1-6, doi: 10.1109/ISVLSI65124.2025.11130291. [Link to the paper](https://ieeexplore.ieee.org/abstract/document/11130291)
+  
+If you find this library useful in your research, please consider citing the papers:
 
  > ```
 > @INPROCEEDINGS{10848742,
@@ -23,6 +24,19 @@ This library is based on the research outlined in the following paper:
 >  doi={10.1109/ICECS61496.2024.10848742}}
 > ```
 
+> ```
+> @INPROCEEDINGS{11130291,
+> author={Mirsalari, Seyed Ahmad and Fariselli, Marco and Bijar, Léo and Paci, Francesco and Benini, Luca and Tagliavini, Giuseppe},
+> booktitle={2025 IEEE Computer Society Annual Symposium on VLSI (ISVLSI)}, 
+> title={Enabling Real-Time Streaming Temporal Convolution Network Inference on Ultra-Low-Power Microcontrollers}, 
+> year={2025},
+> volume={1},
+> number={},
+> pages={1-6},
+> keywords={Performance evaluation;Adaptation models;Quantization (signal);Microcontrollers;Computational modeling;Speech enhancement;Very large scale integration;Real-time systems;Computational efficiency;Optimization;TCN;Streaming Applications;MCU;Embedded systems},
+> doi={10.1109/ISVLSI65124.2025.11130291}}
+> ```
+ 
 ## Setup
 #### Clone the Repository:
 ~~~~~shell
