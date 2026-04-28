@@ -1,8 +1,9 @@
-onnx
-onnxruntime
-onnxoptimizer
-numpy
-torch
-tensorflow
-matplotlib
-tf2onnx
+onnx==1.14.1
+onnxoptimizer==0.3.13
+onnxruntime==1.17.0
+numpy==1.26.4
+torch==2.2.0
+tensorflow==2.17.0
+matplotlib==3.7.1
+tf2onnx==1.16.1
+protobuf>=3.20.3,<4
