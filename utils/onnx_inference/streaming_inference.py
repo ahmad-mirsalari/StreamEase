@@ -365,6 +365,23 @@ class Inference:
                         )
                         output_reshaped = output_processed[0].reshape(-1)
                         output_reshaped_1 = output_processed[1].reshape(-1)
+                        
+                        str_output[0] = update_output(
+                        str_output[0],
+                        output_reshaped,
+                        out_index,
+                        length_mts,
+                        stride,
+                        bias,
+                        )
+                        str_output[1] = update_output(
+                            str_output[1],
+                            output_reshaped_1,
+                            out_index,
+                            length_mts,
+                            stride,
+                            bias,
+                        )
                     else:
                         output_reshaped = (
                             output[0].reshape(-1)
@@ -377,22 +394,14 @@ class Inference:
                             else output[-1]
                         )
 
-                    str_output[0] = update_output(
-                        str_output[0],
-                        output_reshaped,
-                        out_index,
-                        length_mts,
-                        stride,
-                        bias,
-                    )
-                    str_output[1] = update_output(
-                        str_output[1],
-                        output_reshaped_1,
-                        out_index,
-                        length_mts,
-                        stride,
-                        bias,
-                    )
+                        str_output[0] = update_output(
+                            str_output[0],
+                            output_reshaped,
+                            out_index,
+                            length_mts,
+                            stride,
+                            bias,
+                        )
             row_counter += self.time_steps
 
         return str_output
